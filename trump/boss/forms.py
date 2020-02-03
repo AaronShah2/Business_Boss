@@ -5,7 +5,7 @@ from .models import CustomUser
 
 
 class SignUpForm(UserCreationForm):
-    salary = forms.CharField(required=True)
+    salary = forms.IntegerField(required=True)
     year = forms.IntegerField(required=True)
     class Meta:
         model = CustomUser
